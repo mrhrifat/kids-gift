@@ -1,0 +1,251 @@
+/*
+    Author: Rakibul Hassan Rifat
+    
+*/
+/*
+	==========Index=========
+	01) Global CSS
+    02) Main
+    03) Outer Table Section
+	04) Header Section
+    05) Second Header Section
+	06) Banner Section
+	07) Content Section
+	08) Gadget Section
+    09) Line Section
+    10) Footer Section
+    11) Media Query
+	========================
+*/
+/*===== 01) Global CSS Section =====*/
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+table {
+  border-spacing: 0;
+}
+
+td {
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+/*===== 02) Main Section =====*/
+.main {
+  width: 100%;
+  background-color: #fff;
+  table-layout: fixed;
+  /*===== 03) Outer Table Section =====*/
+}
+
+.main .outer-table {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-spacing: 0;
+  /*===== 04) Header Section =====*/
+  /*===== 05) Second Header Section ======*/
+  /*===== 06) Banner Section =====*/
+  /*===== 07) Content Section =====*/
+  /*===== 08) Gadget Section =======*/
+  /*===== 09) Line Section =====*/
+  /*===== 10) Footer Section =====*/
+}
+
+.main .outer-table .header table {
+  width: 100%;
+}
+
+.main .outer-table .header table tr td img {
+  display: block;
+  margin: 0 auto;
+}
+
+.main .outer-table .second {
+  background-color: #843FA1;
+}
+
+.main .outer-table .second table {
+  width: 100%;
+}
+
+.main .outer-table .second table p {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+.main .outer-table .banner {
+  background-color: #94C3CB;
+}
+
+.main .outer-table .banner table {
+  width: 100%;
+  padding: 0;
+}
+
+.main .outer-table .banner table img {
+  width: 100%;
+}
+
+.main .outer-table .content {
+  text-align: center;
+  background-color: #ECF0F1;
+}
+
+.main .outer-table .content table {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main .outer-table .content table .first-col h1 {
+  color: #00C399;
+  font-size: 34px;
+  padding: 33px 10px 0 10px;
+  margin: 0;
+}
+
+.main .outer-table .content table .first-col h4 {
+  color: #843FA1;
+  font-size: 22px;
+  padding: 4px 10px 10px 10px;
+  margin: 0;
+}
+
+.main .outer-table .content table .second-col p {
+  padding: 10px 44px;
+  font-size: 14px;
+  line-height: 190%;
+}
+
+.main .outer-table .content table .second-col button {
+  background-color: #843FA1;
+  line-height: 120%;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main .outer-table .content table .second-col button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main .outer-table .content table .third-col p {
+  padding: 11px 44px 18px;
+  font-size: 14px;
+  line-height: 190%;
+}
+
+.main .outer-table .content table .third-col span {
+  background-color: #843FA1;
+  padding: 1px 10px;
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+.main .outer-table .content table .third-col p:last-child {
+  font-size: 24px;
+  line-height: 140%;
+  color: #843FA1;
+  padding: 20px 10px 14px;
+}
+
+.main .outer-table .gadget {
+  background-color: #ECF0F1;
+}
+
+.main .outer-table .gadget .row {
+  width: 100%;
+}
+
+.main .outer-table .gadget .row .col-3 {
+  width: 25%;
+  float: left;
+}
+
+.main .outer-table .gadget .row .col-3 img {
+  width: 90%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main .outer-table .gadget .row .col-3 p {
+  text-align: center;
+  line-height: 190%;
+  color: #843FA1;
+}
+
+.main .outer-table .gadget .lower-text p {
+  line-height: 190%;
+  color: #111;
+  padding: 29px 44px 42px;
+  text-align: center;
+}
+
+.main .outer-table .line {
+  border-bottom: 6px;
+  border-color: #843FA1;
+  border-style: solid;
+  width: 100%;
+}
+
+.main .outer-table .footer table {
+  width: 100%;
+}
+
+.main .outer-table .footer table .social {
+  padding: 33px 20px 20px;
+  text-align: center;
+}
+
+.main .outer-table .footer table .social a {
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.main .outer-table .footer table .social a img {
+  width: 5%;
+}
+
+.main .outer-table .footer table .content {
+  background-color: #fff;
+}
+
+.main .outer-table .footer table .content p {
+  width: 75%;
+  color: #B8BFCA;
+  line-height: 190%;
+  text-align: center;
+  padding: 11px 44px 42px;
+  font-size: 12px;
+}
+
+/*===== 11) Media Query =====*/
+@media (max-width: 600px) {
+  .gadget .row .col-3 {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .gadget .row .col-3 {
+    display: block;
+    float: none !important;
+    margin: 0 auto;
+  }
+  .footer .social a img {
+    width: 10% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

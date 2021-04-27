@@ -1,0 +1,266 @@
+/*
+    Author: Rakibul Hassan Rifat
+    
+*/
+
+/*
+	==========Index=========
+	01) Global CSS
+    02) Main
+    03) Outer Table Section
+	04) Header Section
+    05) Second Header Section
+	06) Banner Section
+	07) Content Section
+	08) Gadget Section
+    09) Line Section
+    10) Footer Section
+    11) Media Query
+	========================
+*/
+
+/*===== 01) Global CSS Section =====*/
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+table{
+    border-spacing: 0;
+}
+td{
+    padding: 0;
+}
+img{
+    border:0;
+}
+
+/*===== 02) Main Section =====*/
+.main{
+    width: 100%;
+    background-color: #fff;
+    table-layout: fixed;
+
+    /*===== 03) Outer Table Section =====*/
+    .outer-table{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-spacing: 0;
+
+        /*===== 04) Header Section =====*/
+        .header{
+            table{
+                width: 100%;
+                tr td img{
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        /*===== 05) Second Header Section ======*/
+        .second{
+            background-color: #843FA1;  
+            table{
+                width: 100%;
+                p{
+                    font-size: 16px;
+                    color: #fff;
+                    text-align: center;
+                }
+            }
+        }
+
+        /*===== 06) Banner Section =====*/
+        .banner{
+            background-color: #94C3CB;
+            table{
+                width: 100%;
+                padding: 0;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        /*===== 07) Content Section =====*/
+        .content{
+            text-align: center;
+            background-color: #ECF0F1;
+
+            table{
+                width: 100%;
+                margin:0 auto;
+
+                .first-col{
+                    h1{
+                        color:#00C399;
+                        font-size: 34px;
+                        padding: 33px 10px 0 10px;
+                        margin: 0;
+                    }
+                    h4{
+                        color: #843FA1;
+                        font-size: 22px;
+                        padding: 4px 10px 10px 10px;
+                        margin: 0;
+                    }
+                }
+
+                .second-col{
+                    p{
+                        padding: 10px 44px;
+                        font-size: 14px;
+                        line-height: 190%;
+                    }
+                    button{
+                        background-color: #843FA1;
+                        line-height: 120%;
+                        padding: 15px 35px;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        
+                        a{
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .third-col{
+                    p{
+                        padding: 11px 44px 18px;
+                        font-size: 14px;
+                        line-height: 190%;
+                    }
+                    span{
+                        background-color: #843FA1;
+                        padding: 1px 10px;
+                        width: 75%;
+                        display: block;
+                        margin: 0 auto
+                    }
+                    p:last-child{
+                        font-size: 24px;
+                        line-height: 140%;
+                        color:#843FA1;
+                        padding: 20px 10px 14px;
+                    }
+                }
+            }
+        }
+
+        /*===== 08) Gadget Section =======*/
+        .gadget{
+            background-color: #ECF0F1;   
+            .row{
+                width: 100%;             
+
+                .col-3{
+                    width: 25%;
+                    float: left;
+
+                    img{
+                        width: 90%;
+                        padding: 10px;
+                        box-sizing: border-box;
+                    }
+                    p{
+                        text-align: center;
+                        line-height: 190%;
+                        color:#843FA1;
+                    }
+                }
+            }
+            .lower-text{
+                p{
+                    line-height: 190%;
+                    color: #111;
+                    padding: 29px 44px 42px;
+                    text-align: center;
+                }
+               
+            }
+        }
+
+        /*===== 09) Line Section =====*/
+        .line{ 
+            border-bottom: 6px;
+            border-color: #843FA1;
+            border-style: solid;
+            width: 100%;
+        }
+
+        /*===== 10) Footer Section =====*/
+        .footer{
+            
+            table{
+                width: 100%;
+                .social{
+                    padding: 33px 20px 20px;
+                    text-align: center;
+
+                    a{
+                        text-decoration: none;
+                        margin:0 15px;
+                            
+                        img{
+                            width: 5%;
+                        }
+                    }
+                }
+
+                .content{
+                    background-color: #fff;
+                    
+                    p{
+                        width: 75%;
+                        color:#B8BFCA;
+                        line-height: 190%;
+                        text-align: center;
+                        padding: 11px 44px 42px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        //Outer Section End
+    }
+    //Main Section End
+}
+
+/*===== 11) Media Query =====*/
+@media (max-width:600px){
+    .gadget{
+        .row{
+            .col-3{
+                width:50% !important;
+            }
+        }
+    }
+}
+@media (max-width:450px){
+    .gadget{
+        .row{
+            .col-3{
+                display: block;
+                float: none !important;
+                margin: 0 auto;
+            }
+        }
+    }
+    .footer{
+        .social{
+            a{
+                img{
+                    width: 10% !important;
+                }
+            }
+        }
+    }    
+}

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="x-icon/image" href="./img/favicon.png" alt="favicon">
+
+    <!-- CSS Section -->
+    <style>
+        /*
+    Author: Rakibul Hassan Rifat
+    
+    */
+        /*
+	==========Index=========
+	    01) Global CSS
+        02) Main
+        03) Outer Table Section
+	    04) Header Section
+        05) Second Header Section
+	    06) Banner Section
+	    07) Content Section
+	    08) Gadget Section
+        09) Line Section
+        10) Footer Section
+        11) Media Query
+	========================
+    */
+        /*===== 01) Global CSS Section =====*/
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
+        /*===== 02) Main Section =====*/
+        .main {
+            width: 100%;
+            background-color: #fff;
+            table-layout: fixed;
+
+        }
+
+        /*===== 03) Outer Table Section =====*/
+        .main .outer-table {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-spacing: 0;
+        }
+
+        /*===== 04) Header Section =====*/
+        .main .outer-table .header table {
+            width: 100%;
+        }
+
+        .main .outer-table .header table tr td img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        /*===== 05) Second Header Section ======*/
+        .main .outer-table .second {
+            background-color: #843FA1;
+        }
+
+        .main .outer-table .second table {
+            width: 100%;
+        }
+
+        .main .outer-table .second table p {
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+        }
+
+        /*===== 06) Banner Section =======*/
+        .main .outer-table .banner {
+            background-color: #94C3CB;
+        }
+
+        .main .outer-table .banner table {
+            width: 100%;
+            padding: 0;
+        }
+
+        .main .outer-table .banner table img {
+            width: 100%;
+        }
+
+        /*===== 07) Content Section =====*/
+        .main .outer-table .content {
+            text-align: center;
+            background-color: #ECF0F1;
+        }
+
+        .main .outer-table .content table {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .main .outer-table .content table .first-col h1 {
+            color: #00C399;
+            font-size: 34px;
+            padding: 33px 10px 0 10px;
+            margin: 0;
+        }
+
+        .main .outer-table .content table .first-col h4 {
+            color: #843FA1;
+            font-size: 22px;
+            padding: 4px 10px 10px 10px;
+            margin: 0;
+        }
+
+        .main .outer-table .content table .second-col p {
+            padding: 10px 44px;
+            font-size: 14px;
+            line-height: 190%;
+        }
+
+        .main .outer-table .content table .second-col button {
+            background-color: #843FA1;
+            line-height: 120%;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .main .outer-table .content table .second-col button a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .main .outer-table .content table .third-col p {
+            padding: 11px 44px 18px;
+            font-size: 14px;
+            line-height: 190%;
+        }
+
+        .main .outer-table .content table .third-col span {
+            background-color: #843FA1;
+            padding: 1px 10px;
+            width: 75%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .main .outer-table .content table .third-col p:last-child {
+            font-size: 24px;
+            line-height: 140%;
+            color: #843FA1;
+            padding: 20px 10px 14px;
+        }
+
+        /*===== 08) Gadget Section =======*/
+        .main .outer-table .gadget {
+            background-color: #ECF0F1;
+        }
+
+        .main .outer-table .gadget .row {
+            width: 100%;
+        }
+
+        .main .outer-table .gadget .row .col-3 {
+            width: 25%;
+            float: left;
+        }
+
+        .main .outer-table .gadget .row .col-3 img {
+            width: 90%;
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .main .outer-table .gadget .row .col-3 p {
+            text-align: center;
+            line-height: 190%;
+            color: #843FA1;
+        }
+
+        .main .outer-table .gadget .lower-text p {
+            line-height: 190%;
+            color: #111;
+            padding: 29px 44px 42px;
+            text-align: center;
+        }
+
+        /*===== 09) Line Section =====*/
+        .main .outer-table .line {
+            border-bottom: 6px;
+            border-color: #843FA1;
+            border-style: solid;
+            width: 100%;
+        }
+
+        /*===== 10) Footer Section =====*/
+        .main .outer-table .footer table {
+            width: 100%;
+        }
+
+        .main .outer-table .footer table .social {
+            padding: 33px 20px 20px;
+            text-align: center;
+        }
+
+        .main .outer-table .footer table .social a {
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .main .outer-table .footer table .social a img {
+            width: 5%;
+        }
+
+        .main .outer-table .footer table .content {
+            background-color: #fff;
+        }
+
+        .main .outer-table .footer table .content p {
+            width: 75%;
+            color: #B8BFCA;
+            line-height: 190%;
+            text-align: center;
+            padding: 11px 44px 42px;
+            font-size: 12px;
+        }
+
+        /*===== 11) Media Query =====*/
+        @media (max-width: 600px) {
+            .gadget .row .col-3 {
+                width: 50% !important;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .gadget .row .col-3 {
+                display: block;
+                float: none !important;
+                margin: 0 auto;
+            }
+
+            .footer .social a img {
+                width: 10% !important;
+            }
+        }
+
+        /*# sourceMappingURL=style.css.map */
+    </style>
+    <title>Kids Gift || Mrh Rifat</title>
+</head>
+
+<body>
+
+    <!-- Main Section Start -->
+    <section class="main">
+
+        <!-- Outer Table Start -->
+        <table class="outer-table">
+
+            <!-- Header Section Start -->
+            <tr>
+                <td class="header">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="https://i.ibb.co/hsXWY46/logo.png" alt="logo">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Header Section End -->
+
+            <!-- Second Header Section Start -->
+            <tr>
+                <td class="second">
+                    <table>
+                        <tr>
+                            <td>
+                                <p>
+                                    Enjoy free shipping with the code
+                                    <strong>FREESHIPPING</strong>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Second Header Section End -->
+
+            <!-- Banner Section Start -->
+            <tr>
+                <td class="banner">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="https://i.ibb.co/x2fkYs5/banner.gif" alt="banner">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Banner Section End -->
+
+            <!-- Content Section Start -->
+            <tr>
+                <td class="content">
+                    <table>
+
+                        <!-- First Coloumn -->
+                        <tr class="first-col">
+                            <td>
+                                <h1>Magic Plane</h1>
+                                <h4>To try at home</h4>
+                            </td>
+                        </tr>
+
+                        <!-- Second Column -->
+                        <tr class="second-col">
+                            <td>
+                                <p>
+                                    It might not feel very magical being cooped up indoors.  If you can’t be with your
+                                    grandchild, niece or nephew right now, remember we can send gifts directly to their
+                                    doorstep. We're offering our lovely newsletter subscribers free standard delivery
+                                    with the code
+                                    <strong>
+                                        FREESHIPPING
+                                    </strong>
+                                </p>
+                                <button>
+                                    <a href="#">GET IT NOW!</a>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Third Column -->
+                        <tr class="third-col">
+                            <td>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod
+                                    tincidunt ut laoreet dolore magna aliquam
+                                </p>
+                                <span></span>
+                                <p>
+                                    Other cool handpicked stuffs
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Content Section End -->
+
+            <!-- Gadget Section Start -->
+            <tr>
+                <td class="gadget">
+                    <table class="row">
+                        <tr>
+                            <td>
+                                <table class="col-3">
+                                    <tr>
+                                        <td>
+                                            <img src="https://i.ibb.co/Jx1RZFg/helicopter.png" alt="helicopter">
+                                            <p>
+                                                Tiny Copt
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="col-3">
+                                    <tr>
+                                        <td>
+                                            <img src="https://i.ibb.co/KG27JTc/rocket.png" alt="rocket">
+                                            <p>
+                                                Magic rocket
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="col-3">
+                                    <tr>
+                                        <td>
+                                            <img src="https://i.ibb.co/715sV2N/letter.png" alt="letter">
+                                            <p>
+                                                Letter blocks
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="col-3">
+                                    <tr>
+                                        <td>
+                                            <img src="https://i.ibb.co/y5X7f1F/train.png" alt="train">
+                                            <p>
+                                                Toy Train
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="lower-text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna aliquam
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <!-- Gadget Section End -->
+
+            <!-- Line Section Start -->
+            <tr>
+                <td class="line">
+                </td>
+            </tr>
+            <!-- Line Section End -->
+
+            <!-- Footer Section Start -->
+            <tr>
+                <td class="footer">
+                    <table>
+
+                        <!-- First Section -->
+                        <tr>
+                            <td class="social">
+                                <a href="#">
+                                    <img src="https://i.ibb.co/qNLtc5s/facebook.png" alt="facebook">
+                                </a>
+                                <a href="#">
+                                    <img src="https://i.ibb.co/LP9Wr7F/instagram.png" alt="instagram">
+                                </a>
+                                <a href="#">
+                                    <img src="https://i.ibb.co/1dMtSGv/pinterest.png" alt="pinterest">
+                                </a>
+                        </tr>
+
+                        <!-- Last Section -->
+                        <tr>
+                            <td class="content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore magna aliquamLorem ipsum dolor sit amet,
+                                    consectetuer adipiscing elit, sed diam nonu
+                                </p>
+                                <p>
+                                    mmy nibh euismod tincidunt ut laoreet dolore magna aliquamLorem ipsum dolor sit
+                                    amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                                    laoreet dolore magna aliquam
+                                </p>
+                                <p>
+                                    Copyright © Mrh Rifat 2021, All rights reserved. 
+                                </p>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Footer Section End -->
+
+        </table>
+        <!-- Outer Table End -->
+    </section>
+    <!-- Main Section End -->
+
+    <!--Img Section
+        <img src="https://i.ibb.co/Y2mXm0r/favicon.png" alt="favicon">
+        <img src="https://i.ibb.co/x2fkYs5/banner.gif" alt="banner">
+        <img src="https://i.ibb.co/qNLtc5s/facebook.png" alt="facebook">
+        <img src="https://i.ibb.co/Jx1RZFg/helicopter.png" alt="helicopter">
+        <img src="https://i.ibb.co/LP9Wr7F/instagram.png" alt="instagram">
+        <img src="https://i.ibb.co/715sV2N/letter.png" alt="letter">
+        <img src="https://i.ibb.co/hsXWY46/logo.png" alt="logo">
+        <img src="https://i.ibb.co/1dMtSGv/pinterest.png" alt="pinterest">
+        <img src="https://i.ibb.co/KG27JTc/rocket.png" alt="rocket">
+        <img src="https://i.ibb.co/y5X7f1F/train.png" alt="train">
+    -->
+
+
+</body>
+
+</html>
